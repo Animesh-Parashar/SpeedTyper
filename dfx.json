@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "SpeedType_backend": {
+      "main": "src/SpeedType_backend/main.mo",
+      "type": "motoko"
+    },
+    "SpeedType_frontend": {
+      "dependencies": [
+        "SpeedType_backend"
+      ],
+      "source": [
+        "src/SpeedType_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "SpeedType_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
